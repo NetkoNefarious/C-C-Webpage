@@ -15,9 +15,7 @@ header, main, footer {
 header {
     height: 100vh;
     position: relative;
-    background: lightgray url(../images/header-background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background: lightgray url(../images/header-background.jpg) center no-repeat;
     background-size: cover;
     text-align: center;
     display: flex;
@@ -26,17 +24,22 @@ header {
 }
 
 header#td {
-    background: lightgray url(../images/td-header-background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: url(../images/td-header-background.jpg);
 }
 
-header#td h1 {
+header#ra {
+    background-image: url(../images/ra-header-background.png);
+}
+
+header#ts {
+    background-image: url(../images/ts-header-background.jpg);
+}
+
+header.game h1 {
     font-size: 6em;
 }
 
-header#td h2 {
+header.game h2 {
     font-size: 2em;
 }
 
@@ -125,14 +128,14 @@ main#index {
 }
 
 .summary {
-    clear: both;
+    padding: 0 20px;
 }
 
-.screenshots img{
-    height: 300px;
+.screenshots img {
+    height: 250px;
 }
 
-.downloads{
+.downloads {
     text-align: left;
     padding: 20px;
 }
@@ -142,7 +145,7 @@ main#index {
 }
 
 .misc a {
-    padding: 20px;
+    margin: 20px;
 }
 
 .misc img {
